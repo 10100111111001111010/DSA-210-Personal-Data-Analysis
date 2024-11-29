@@ -40,9 +40,13 @@ The data will be preprocessed to create a unified dataset combining daily screen
 # Project Timeline
 
 November 30, 2024: Submit GitHub repository URL and initial README.md
+
 December 1-15, 2024: Data collection and preprocessing
+
 December 16-31, 2024: Initial data analysis and visualization
+
 January 1-8, 2025: Finalize analysis and prepare project documentation
+
 January 10, 2025: Project material submission deadline
 
 
