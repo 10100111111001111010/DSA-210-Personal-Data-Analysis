@@ -50,11 +50,10 @@ def parse_youtube_history(file_path):
 file_path = "/Users/nusret/Desktop/Sabancı Fall 2024-2025/DSA 210/Term Project/Takeout/YouTube and YouTube Music/history/watch-history.html"
 history = parse_youtube_history(file_path)
 
-#Save to data/raw/watch-history.json
 
-
+#Save to data/raw/watch-history.csv
 df = pd.DataFrame(history)
 df['datetime'] = pd.to_datetime(df['datetime'])  # Ensure datetime is properly formatted
 df = df.sort_values('datetime', ascending=False)
-df.to_json('../../data/raw/watch-history.json', index=False)
-print("\nData saved to watch-history.json")
+df.to_csv('../../data/raw/watch-history.csv', index=False)
+print("\nData saved to watch-history.csv")
