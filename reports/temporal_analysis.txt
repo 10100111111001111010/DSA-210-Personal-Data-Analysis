@@ -1,0 +1,20 @@
+YouTube Viewing Habits Analysis Report
+====================================
+
+Overall Statistics
+-----------------
+Total videos watched: 24,175
+Total days with activity: 468
+Total viewing sessions: 2,411
+Average videos per active day: 51.7
+
+Peak Activity Times
+-----------------
+Most active day: Saturday (56.0 videos)
+Peak viewing hour: 01:00 (4.4 videos)
+
+Session Analysis
+----------------
+Average session duration: 21.4 minutes
+Median session duration: 8.9 minutes
+Average videos per session: 10.0
