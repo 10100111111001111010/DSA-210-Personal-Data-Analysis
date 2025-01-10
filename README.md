@@ -1,8 +1,8 @@
 # YouTube Viewing Habits Analysis: Understanding Digital Content Consumption
 
+- [Jupyter Notebook](data_analysis.ipynb)
 - [Presentation File](presentation/DSA210-Presentation.pptx)
 - [Data Plots](figures)
-- [Jupyter Notebook](data_analysis.ipynb)
 
 ## Motivation
 This project aims to analyze personal YouTube viewing patterns using data collected through Google Takeout. By examining viewing habits and temporal patterns, the goal is to gain insights into digital content consumption behaviors and understand how they reflect daily routines and interests. This analysis can help optimize content consumption and provide valuable insights into time management.
