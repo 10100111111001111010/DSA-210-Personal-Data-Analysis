@@ -1,56 +1,96 @@
-# YouTube Viewing Habits Analysis: Understanding My Digital Content Consumption
+# YouTube Viewing Habits Analysis: Understanding Digital Content Consumption
 
+## Motivation
+This project aims to analyze personal YouTube viewing patterns using data collected through Google Takeout. By examining viewing habits and temporal patterns, the goal is to gain insights into digital content consumption behaviors and understand how they reflect daily routines and interests. This analysis can help optimize content consumption and provide valuable insights into time management.
 
-## Introduction
-In today's digital age, YouTube has become an integral part of our daily lives, serving as a platform for entertainment, education, and information. This project aims to analyze my personal YouTube viewing habits using data collected through Google Takeout. By examining my viewing patterns and preferences, I seek to gain insights into my digital content consumption behaviors and understand how they reflect my interests and time management.
+## Data Source
+The data is sourced from personal YouTube watch history through Google Takeout, containing detailed information about:
+- Video titles and links
+- Precise timestamps of views
+- Watch duration and session information
+- Complete viewing history from 2024 onwards
 
-## Dataset
-1. Personal YouTube History Data (via Google Takeout)
-- Watch history with timestamps
-- Video metadata (title, channel, category, duration)
-- Interaction data (likes, comments, shares)
-- Search history
-- Time spent per video/session
-- Watch time distribution across different times of day
+## Data Analysis Techniques
 
-## Project Goals
-1. Analyze Content Consumption Patterns
-  - Identify peak viewing hours and days
-  - Calculate average daily watch time
-  - Determine most-watched content categories and channels
-  - Track changes in viewing habits over time
+### 1. Temporal Pattern Analysis
+The project implements a comprehensive TemporalAnalyzer class that processes and analyzes viewing patterns across different time scales:
 
-2. Content Preference Analysis
-  - Analyze video length preferences
-  - Identify trending topics in personal viewing history
-  - Examine the correlation between video duration and completion rate
-  - Study engagement patterns (likes, comments) across different content types
+- **Hourly Analysis**: Examines the distribution of video consumption throughout the day
+- **Daily Patterns**: Investigates viewing habits across different days of the week
+- **Monthly Trends**: Tracks changes in viewing patterns over months
+- **Session Analysis**: Identifies and analyzes viewing sessions with specific focus on binge-watching behavior
 
-3. Time Management Insights
-  - Map viewing patterns against daily schedule
-  - Identify potential time-sink categories
-  - Analyze binge-watching behavior
-  - Compare weekday vs. weekend viewing habits
+### 2. Key Features Analyzed
+- Time-based patterns (hour of day, day of week, monthly trends)
+- Session identification and analysis
+- Binge-watching patterns (defined as sessions with more than 5 videos)
+- Average video consumption rates
 
-## Methods
-1. Data Collection and Preprocessing
-  - Extract data using Google Takeout
-  - Clean and structure the raw data
-  - Create relevant features from timestamp information
-  - Categorize videos using available metadata
+### 3. Visualization Techniques
+The project utilizes various visualization methods to present the findings:
+- Bar charts for hourly and daily patterns
+- Line plots for monthly trends
+- Custom-colored visualizations for AM/PM viewing patterns
+- Specialized plots for binge-watching analysis
 
-2. Analysis Techniques
-  - Time series analysis for viewing patterns
-  - Statistical analysis for content preferences
-  - Clustering for content categorization
-  - Visualization of temporal patterns
+## Key Findings
 
-## Tools and Technologies
-..
+1. **Temporal Patterns**
+   - Detailed hourly distribution of video consumption
+   - Weekly viewing patterns and weekend vs. weekday differences
+   - Monthly trends showing long-term viewing habits
 
-## Expected Outcomes
-1. Comprehensive dashboard of viewing habits
-2. Detailed analysis report with visualizations
-3. Actionable insights for content consumption optimization
-4. Interactive visualizations of viewing patterns
-5. Recommendations for balanced content consumption
+2. **Binge-Watching Insights**
+   - Overall binge-watching percentage across all sessions
+   - Hour-by-hour breakdown of binge-watching tendencies
+   - Peak binge-watching hours identified
+
+## Technical Implementation
+
+### Tools and Libraries Used
+- Python 3.13
+- pandas: Data manipulation and analysis
+- matplotlib: Data visualization
+- seaborn: Enhanced visualizations
+- numpy: Numerical computations
+- Other utilities: os, calendar, collections
+
+### Code Structure
+1. **Data Loading and Preprocessing**
+   - CSV file reading and datetime conversion
+   - Feature engineering for temporal analysis
+   - Session identification logic
+
+2. **Analysis Components**
+   - Temporal pattern analysis
+   - Session-based analysis
+   - Binge-watching pattern detection
+   - Visualization generation
+
+3. **Visualization Pipeline**
+   - Consistent styling with custom color schemes
+   - Automated figure generation and saving
+   - Clean and minimal plot designs
+
+## Limitations and Future Work
+
+### Current Limitations
+- Analysis limited to 2024 data
+- Focus primarily on temporal patterns
+- Basic session identification based on time gaps
+
+### Future Enhancements
+1. **Extended Analysis**
+   - Content category analysis
+   - Channel preference analysis
+   - Correlation with external factors
+
+2. **Technical Improvements**
+   - Real-time data updating
+   - Interactive visualizations
+   - Machine learning for pattern prediction
+
+3. **Additional Features**
+   - Content recommendation system
+   - Automated reporting system
+   - Personal insights dashboard
